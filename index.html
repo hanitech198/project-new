@@ -227,6 +227,11 @@
         .file-name {
             padding-left: 10px;
         }
+
+
+        span i{
+            font-size: 16px;
+        }
     </style>
 </head>
 
@@ -234,7 +239,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand ms-3" href="#">
+            <a class="navbar-brand ms-1" href="#">
                 <img src="assets/img/logo.png" alt="Logo">
             </a>
 
@@ -322,18 +327,18 @@
         </div>
         <div class="border-add m-3"></div>
         <div class="container-fluid">
-            <div class="m-1">
+            <div class="">
                 <div class="d-flex">
-                    <h4 class="my-3 me-auto">Attachments</h4>
-                    <button class="set-button" id="toggleButtonAttachments">
-                        <i class="fas fa-chevron-up" id="chevronIconAttachments"></i>
+                    <h4 class="my-3 ms-1">Attachments</h4>
+                    <button class="set-button ms-auto" id="toggleButtonAttachments">
+                        <i class="fas fa-chevron-up " id="chevronIconAttachments"></i>
                     </button>
                 </div>
 
 
 
                 <form id="attachmentsForm">
-                    <div class="mb-3" id="title-container-attachments">
+                    <div class="mb-3 m-1" id="title-container-attachments">
                         <input type="text" class="form-control" id="title2" placeholder="Title (optional)">
                     </div>
                 </form>
@@ -345,12 +350,20 @@
             </div>
 
             <div class="file-list m-1" id="fileList"></div>
-            <h4 class="my-3 d-flex justify-content-between align-items-center m-1">
+            <!-- <h4 class="my-3 d-flex m-1">
                 Links
-                <span id="chevronBtn" class="chevron-button">
+                <span id="chevronBtn" class="chevron-button ms-auto">
                     <i class="fas fa-chevron-up"></i>
                 </span>
-            </h4>
+            </h4> -->
+            <div class="d-flex m-1 mt-4" >
+                <h4 >
+                    Links</h4>
+                    <span id="chevronBtn" class="chevron-button ms-auto">
+                        <i class="fas fa-chevron-up"></i>
+                    </span>
+
+            </div>
             <div id="linkForm">
                 <form class="m-1">
                     <div class="form-group">
