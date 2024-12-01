@@ -270,9 +270,7 @@ span i {
 .container-flex {
     display: flex;
     align-items: center;
-    /* Aligns items vertically in the middle */
     justify-content: space-between;
-    /* Aligns items horizontally in the center */
     gap: 15px;
 }
 
