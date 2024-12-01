@@ -14,14 +14,18 @@
             font-family: 'Lato', sans-serif;
 
         }
-
+.d-flex.flex-wrap.links-p.ms-2-set.mt-2.mb-2{
+    padding:0 0 0 14px !important;
+}
         .nav-item {
             padding: 0 15px;
             font-weight: 300;
             font-size: 18px;
             Line-height: 21.6px;
         }
-
+        nav ul{
+            margin-left: 0 !important;
+        }
 
         .nav-link.active {
             border-bottom: 2px solid #224635;
@@ -148,9 +152,11 @@
             border-bottom: 1px solid #ddd !important;
             margin-top: 10px;
         }
-        .url-item i{
+
+        .url-item i {
             color: #68745C;
         }
+
         .url-text {
             flex-grow: 1;
             word-wrap: break-word;
@@ -224,7 +230,7 @@
         }
 
 
-        span i{
+        span i {
             font-size: 16px;
         }
 
@@ -242,18 +248,21 @@
         .one-set {
             background-color: #CCCCCC;
             color: black;
-            
+
         }
-        .one-set:hover{
+
+        .one-set:hover {
             background-color: #979696;
             color: black;
-            
+
         }
-        .two-set{
+
+        .two-set {
             background-color: #70916D;
             color: white;
         }
-        .two-set:hover{
+
+        .two-set:hover {
             background-color: #5b7758;
             color: white;
         }
@@ -322,88 +331,88 @@
                 <li><a href="index.html">Breech Baby in Pregnancy</a></li>>
                 <li><a href="index.html">Treatment option</a></li>
             </ul>
-            <div class="border-add m-3"></div>
+
         </div>
+    </div>
+    <div class="border-add m-3"></div>
+    <div class="container-fluid">
+        <div class="m-1">
+            <h3 class="my-4">Treatment Option</h3>
+            <div class="d-flex">
+                <h4 class="my-3 me-auto">Content</h4>
+                <button class="set-button" id="toggleButton">
+                    <i class="fa fa-chevron-up"></i>
+                </button>
+            </div>
 
-
-
-        <div class="container-fluid">
-            <div class="m-1">
-                <h3 class="my-4">Treatment Option</h3>
-                <div class="d-flex">
-                    <h4 class="my-3 me-auto">Content</h4>
-                    <button class="set-button" id="toggleButton">
-                        <i class="fa fa-chevron-up"></i>
-                    </button>
+            <form>
+                <div class="mb-3" id="title-container">
+                    <input type="text" class="form-control" id="title" placeholder="Title">
                 </div>
 
-                <form>
-                    <div class="mb-3" id="title-container">
-                        <input type="text" class="form-control" id="title" placeholder="Title">
-                    </div>
-
-                    <div class="mb-3" id="details-container">
-                        <textarea class="form-control" id="details" rows="6" placeholder="Details..."></textarea>
-                    </div>
-
-
-                </form>
-            </div>
-        </div>
-        <div class="border-add m-3"></div>
-        <div class="container-fluid">
-            <div class="">
-                <div class="d-flex">
-                    <h4 class="my-3 ms-1">Attachments</h4>
-                    <button class="set-button ms-auto" id="toggleButtonAttachments">
-                        <i class="fas fa-chevron-up " id="chevronIconAttachments"></i>
-                    </button>
+                <div class="mb-3" id="details-container">
+                    <textarea class="form-control" id="details" rows="6" placeholder="Details..."></textarea>
                 </div>
 
 
+            </form>
+        </div>
 
-                <form id="attachmentsForm">
-                    <div class="mb-3 m-1" id="title-container-attachments">
-                        <input type="text" class="form-control" id="title2" placeholder="Title (optional)">
-                    </div>
-                </form>
-            </div>
-            <div class="drop-zone m-1" id="dropZone">
-                <i class="fa-solid fa-upload"></i>
-                <p>Drag and drop images, videos or files</p>
-                <input type="file" id="fileInput" accept="image/*,video/*,application/*" style="display:none" multiple>
+    </div>
+    <div class="border-add m-3"></div>
+    <div class="container-fluid">
+
+        <div>
+            <div class="d-flex">
+                <h4 class="my-3 ms-1">Attachments</h4>
+                <button class="set-button ms-auto" id="toggleButtonAttachments">
+                    <i class="fas fa-chevron-up " id="chevronIconAttachments"></i>
+                </button>
             </div>
 
-            <div class="file-list m-1" id="fileList"></div>
-            <div class="d-flex m-1 mt-4" >
-                <h4 >
-                    Links</h4>
-                    <span id="chevronBtn" class="chevron-button ms-auto">
-                        <i class="fas fa-chevron-up"></i>
-                    </span>
 
-            </div>
-            <div id="linkForm">
-                <form class="m-1">
-                    <div class="form-group">
-                        <input type="text" class="form-control my-2" id="title" placeholder="Enter Title (optional)">
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input type="url" class="form-control adjust-border" id="url" placeholder="Paste URL here"
-                                disabled>
-                            <div class="input-group-append">
-                                <button class="btn add-button-set" type="button" id="addUrl">Add</button>
-                            </div>
+
+            <form id="attachmentsForm">
+                <div class="mb-3 m-1" id="title-container-attachments">
+                    <input type="text" class="form-control" id="title2" placeholder="Title (optional)">
+                </div>
+            </form>
+        </div>
+        <div class="drop-zone m-1" id="dropZone">
+            <i class="fa-solid fa-upload"></i>
+            <p>Drag and drop images, videos or files</p>
+            <input type="file" id="fileInput" accept="image/*,video/*,application/*" style="display:none" multiple>
+        </div>
+
+        <div class="file-list m-1" id="fileList"></div>
+        <div class="d-flex m-1 mt-4">
+            <h4>
+                Links</h4>
+            <span id="chevronBtn" class="chevron-button ms-auto">
+                <i class="fas fa-chevron-up"></i>
+            </span>
+
+        </div>
+        <div id="linkForm">
+            <form class="m-1">
+                <div class="form-group">
+                    <input type="text" class="form-control my-2" id="title" placeholder="Enter Title (optional)">
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="url" class="form-control adjust-border" id="url" placeholder="Paste URL here"
+                            disabled>
+                        <div class="input-group-append">
+                            <button class="btn add-button-set" type="button" id="addUrl">Add</button>
                         </div>
                     </div>
-                    <div id="urlList" class="url-list"></div>
-                    <div class="mt-3">
-                        <button class="btn btn-primary custom-btn one-set">Save Draft</button>
-                        <button class="btn btn-secondary custom-btn two-set">Submit</button>
-                    </div>
-                </form>
-            </div>
+                </div>
+                <div id="urlList" class="url-list"></div>
+                <div class="mt-3">
+                    <button class="btn btn-primary custom-btn one-set">Save Draft</button>
+                    <button class="btn btn-secondary custom-btn two-set">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 </body>
